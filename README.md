@@ -1,3 +1,3 @@
 # Shoes---Store
-Introducing a new Website to buying shoes .
-using language in Html , Css , JS and have some animations.
+Introducing a new Website to buying shoes. </n>
+Using language's </n> Html , Css , JS and have some animations.
