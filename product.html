@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoe Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><i class="fa-brands fa-shoelace" style="color: #ffffff;">
+                    <i class="fa-solid fa-shoe-prints fa-fade" style="color: #ffffff;"></i></i>
+                </i></div>
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <input type="text" placeholder="Search for shoes..." class="search-bar">
+            <button class="search-logo"><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></button>
+            <div class="cart-icon" onclick="showCartPopup()"><i class="fa-solid fa-cart-shopping"
+                    style="color: #ffffff;"></i> Cart</div>
+        </nav>
+    </header>
+
+    <div class="text">
+        <h1>Premium Shoe's Collection </h1>
+        <h2>Welcome to Your Shop</h2>
+        <p>Discover new type of fashion You want! </p>
+    </div>
+
+    <main class="product-list">
+        <div class="shoe-item">
+            <img src="img/p.black.avif" alt="Shoe 1">
+            <h3>Black Nike</h3>
+            <p>Rs 3350.00</p>
+            <button onclick="addToCart()">Add to Cart</button>
+            <button onclick="window.location.href='checkout.html'">Buy</button>
+        </div>
+        <div class="shoe-item">
+            <img src="img/p.bugatti.avif" alt="Shoe 2">
+            <h3>Bugatti Boo</h3>
+            <p>Rs 4999.00</p>
+            <button onclick="addToCart()">Add to Cart</button>
+            <button onclick="window.location.href='checkout.html'">Buy</button>
+        </div>
+        <div class="shoe-item">
+            <img src="img/p.rt" alt="Shoe 3">
+            <h3>Blue Tap</h3>
+            <p>Rs 2999.00</p>
+            <button onclick="addToCart()">Add to Cart</button>
+            <button onclick="window.location.href='checkout.html'">Buy</button>
+        </div>
+        <div class="shoe-item">
+            <img src="img/p.Rw.avif" alt="Shoe 4">
+            <h3>Reeko Blom</h3>
+            <p>Rs 3889.00</p>
+            <button onclick="addToCart()">Add to Cart</button>
+            <button onclick="window.location.href='checkout.html'">Buy</button>
+        </div>
+        <div class="shoe-item">
+            <img src="img/p.white.avif" alt="Shoe 5">
+            <h3>Moon white</h3>
+            <p>Rs 3999.00</p>
+            <button onclick="addToCart()">Add to Cart</button>
+            <button onclick="window.location.href='checkout.html'">Buy</button>
+        </div>
+        <div class="shoe-item">
+            <img src="img/p.wr.avif" alt="Shoe 6">
+            <h3>White Tap</h3>
+            <p>3750.00</p>
+            <button onclick="addToCart()">Add to Cart</button>
+            <button onclick="window.location.href='checkout.html'">Buy</button>
+        </div>
+    </main>
+
+    <div class="cart-popup" id="cartPopup">
+        <p>Item added to cart!</p>
+        <button onclick="closeCartPopup()">Close</button>
+        <button onclick="goToCart()">Go to Cart</button>
+    </div>
+
+    <div class="back-top">
+        <p><a href="#">Back to top</a></p>
+    </div>
+
+    <footer>
+        <div>
+            <span>© By Yugal.K <br> 2024 </span>
+        </div>
+
+        <script src="script.js"></script>
+</body>
+
+</html>

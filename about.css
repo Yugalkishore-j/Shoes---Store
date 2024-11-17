@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap');
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Baloo 2", sans-serif;
+    background: linear-gradient(to bottom, #f0f0f0, #e0e0e0);
+    color: #333;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in forwards;
+}
+
+/* Fade-in on Load Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    background-color: #0D1B2A;
+    color: #fff;
+    padding: 50px 20px;
+    transform: translateY(-20px);
+    opacity: 0;
+    animation: slideInDown 1s ease-out forwards;
+    animation-delay: 0.5s;
+}
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+.hero p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+@keyframes slideInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Company Description */
+.company-des {
+    text-align: center;
+    padding: 40px 20px;
+    transform: translateY(20px);
+    opacity: 0;
+    animation: slideInUp 1s ease-out forwards;
+    animation-delay: 1s;
+}
+.company-des h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.company-des p {
+    font-size: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Team Section */
+.team {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.team h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    transform: translateY(-20px);
+    opacity: 0;
+    animation: fadeInUp 1s ease-out forwards;
+    animation-delay: 1.5s;
+}
+
+.team-member {
+    text-align: center;
+    margin: 20px;
+    opacity: 0;
+    transform: scale(0.9);
+    transition: transform 0.3s, opacity 0.3s;
+}
+.team-member h3 {
+    font-size: 1.2rem;
+    margin: 10px 0 5px;
+}
+
+.team-member p {
+    font-size: 1rem;
+    color: #777;
+}
+.team-member:hover {
+    transform: scale(1.05);
+    opacity: 1;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    transition: transform 0.3s;
+}
+
+.team-member img:hover {
+    transform: rotate(10deg) scale(1.05);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1B263B;
+    color: #f3efef;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in forwards;
+    animation-delay: 2s;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .team-member img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .team {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .company-description p {
+        font-size: 0.9rem;
+    }
+
+    .team h2 {
+        font-size: 1.5rem;
+    }
+
+    .team-member h3 {
+        font-size: 1rem;
+    }
+}

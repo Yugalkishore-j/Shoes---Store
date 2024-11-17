@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoe Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><i class="fa-brands fa-shoelace" style="color: #ffffff;"></i>
+                <i class="fa-solid fa-shoe-prints fa-fade" style="color: #ffffff;"></i></i>
+            </div>
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <input type="text" placeholder="Search for shoes..." class="search-bar">
+            <button class="search-logo"><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></button>
+            <div class="cart-icon" onclick="showCartPopup()"><i class="fa-solid fa-cart-shopping"
+                style="color: #ffffff"></i>Cart</div>
+            </nav>
+        </header>
+        
+        <div class="background-img">
+              <div class="text">
+        <h1>Shoe's Store </h1>
+        <h2>Welcome to Your Shop</h2>
+        <marquee behavior="" width= "50%" direction="left">
+        <p>Discover new type of fashion You want! </p>
+    </marquee>
+    </div>
+        </div>
+
+    <main class="product-list">
+        <div class="shoe-item">
+            <img src="img/black op-1.webp" alt="Shoe 1">
+            <h3>Black Bop</h3>
+            <p>Rs 1000.00</p>
+            <button onclick="addToCart()">Add to Cart</button>
+            <button onclick="window.location.href='product1.html'">Buy</button>
+        </div>
+        <div class="shoe-item">
+            <img src="img/Bacca Bucci.webp" alt="Shoe 2">
+            <h3>Bacca Bucci</h3>
+            <p>Rs 1999.00</p>
+            <button onclick="addToCart()">Add to Cart</button>
+            <button onclick="window.location.href='product1.html'">Buy</button>
+        </div>
+        <div class="shoe-item">
+            <img src="img/blue back.avif" alt="Shoe 3">
+            <h3>Blue Cover</h3>
+            <p>Rs 1111.00</p>
+            <button onclick="addToCart()">Add to Cart</button>
+            <button onclick="window.location.href='product1.html'">Buy</button>
+        </div>
+        <div class="shoe-item">
+            <img src="img/Blue b.webp" alt="Shoe 4">
+            <h3>Buma Blam</h3>
+            <p>Rs 1555.00</p>
+            <button onclick="addToCart()">Add to Cart</button>
+            <button onclick="window.location.href='product1.html'">Buy</button>
+        </div>
+        <div class="shoe-item">
+            <img src="img/White blue.avif" alt="Shoe 5">
+            <h3>White Tap</h3>
+            <p>Rs 999.00</p>
+            <button onclick="addToCart()">Add to Cart</button>
+            <button onclick="window.location.href='product1.html'">Buy</button>
+        </div>
+        <div class="shoe-item">
+            <img src="img/Red shoe.webp" alt="Shoe 6">
+            <h3>Red Blood</h3>
+            <p>1750.00</p>
+            <button onclick="addToCart()">Add to Cart</button>
+            <button onclick="window.location.href='product1.html'">Buy</button>
+        </div>
+    </main>
+
+    <div class="cart-popup" id="cartPopup">
+        <p>Item added to cart!</p>
+        <button onclick="closeCartPopup()">Close</button>
+        <button onclick="goToCart()">Go to Cart</button>
+    </div>
+
+    <div class="back-top">
+        <p><a href="#">Back to top</a></p>
+    </div>
+    <footer>
+        <div>
+            <span>© By Yugal.K <br> 2024 </span>
+        </div>
+
+        <script src="script.js"></script>
+</body>
+
+</html>
